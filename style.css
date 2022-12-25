@@ -35,23 +35,54 @@ a {
 
 
 
-.yellow{
-  color: #FFAE2B;
-}
+
 
 p {
 }
 h1 {
   font-size: 70px;
 }
-h2 {
+.sup-text{
+  color: #ACA592;
+  text-align: center;
+}
+
+ h2{
+  color: #FFAE2B;
+  margin-bottom: 60px;
+  text-align: center;
   font-size: 60px;
+}
+h3{
+  font-size: 29px;
+}
+
+h4{
+  font-size: 15px;
+}
+
+.yellow{
+  color: #FFAE2B;
 }
 
 .button {
   padding: 15px 25px;
   background: none;
   cursor: pointer;
+  background: none;
+}
+ .button{
+  margin-top: 35px;
+  background-color: #FFAE2B;
+  border: 1px solid #FFAE2B;
+  color: #000;
+}
+
+ .button:hover{
+  margin-top: 35px;
+  background-color: #000;
+  border: 1px solid #000;
+  color: #FFAE2B;
 }
 
 .container-box {
@@ -109,6 +140,7 @@ margin: auto;
   color: #FFAE2B;
   border: 1px solid #FFAE2B;
   text-transform: uppercase;
+  background-color: #181511;
 }
 
 .header .button:hover{
@@ -155,14 +187,7 @@ margin: auto;
   padding: 120px 0;
   text-align: center;
 }
-.templates .sup-text{
-  color: #ACA592;
-}
-
-.templates h2{
-  color: #FFAE2B;
-  margin-bottom: 60px;
-}
+ 
 
 .template-list{
   display: grid;
@@ -289,4 +314,207 @@ font-size: 13px;
     max-width: 390px;
     padding: 0px;
   }
+}
+/*================== photo ================*/
+.photo{
+  background-image: url(./images/photo/bg.png);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+/*================ service ===============*/
+.service{
+  padding: 120px 0;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list__item{
+  border: 1px solid #4B4136;
+  padding: 61px;
+}
+
+.list__item:nth-child(2){
+position: relative;
+top: 3px;
+}
+
+.list__item:nth-child(3){
+  position: relative;
+  top: 16px;
+  }
+.list__item__image{
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.service h3{
+  margin-bottom: 10px;
+}
+
+.service h4{
+  margin-bottom: 5px;
+}
+
+.service p{
+  font-size: 11px;
+}
+/*=================== instagram ==================*/
+.instagram{
+  padding: 21px 0;
+}
+
+.instagram .container-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-box, .right-box{
+  display: flex;
+}
+
+.insta-icon{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: -35px;
+  left: calc(50% - 50px/2);
+}
+.left-box__item{
+  background-image: url(./images/instagram/Frame-1.png);
+  width: 217px;
+  height: 240px;
+  margin-right: 1px;
+}
+.left-box__item:nth-child(2){
+  background-image: url(./images/instagram/Frame-2.png);
+  
+}
+
+.right-box__item{
+  background-image: url(./images/instagram/Frame-3.png);
+  width: 217px;
+  height: 240px;
+  margin-right: 1px;
+}
+.right-box__item:nth-child(2){
+  background-image: url(./images/instagram/Frame-4.png);
+  
+}
+.text-box{
+  padding: 40px 45px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-box .insta-icon{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 200px/2);
+  z-index: -1;
+}
+
+.insta-title{
+  font-size: 40px;
+  color: #FFAE2B;
+}
+
+.instagram .button{
+  text-transform: uppercase;
+  max-width: 125px;
+  padding: 14px 24px;
+  font-size: 11px;
+  
+}
+
+/*================= footer ===============*/
+.footer{
+  padding-top: 120px;
+  text-align: center;
+}
+
+.footer .container-box.footer-cont{
+  max-width: 600px;
+  width: 100%;
+
+}
+
+.footer p {
+  font-size: 12px;
+  margin-bottom: 82px;
+}
+
+.info-box{
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.info-box .button{
+  margin: 0;
+  width: 420px;
+}
+
+.info-box .button:first-child{
+  background-color: #181511;
+  border: 1px solid #4B4136;
+}
+
+.socials{
+  margin: 25px 0 40px;
+}
+
+.socials__item{
+  border: 1px solid #4B4136;
+  padding: 14px;
+  margin-right: 8px;
+}
+.socials__item:last-child{
+  margin-right: 0;
+}
+
+.socials__item__icon{
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.socials__item:hover  .socials__item__icon{
+  fill: #FFAE2B;
+}
+
+.container-box.copyright{
+  padding: 20px 0;
+  border-top: 1px solid #4B4136;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.copyright p{
+  color: #ACA592;
+  margin-bottom: 0;
+}
+.copyright a{
+  color: #FFAE2B;
+}
+.copyright-list{
+  display: flex;
+}
+.copyright-list__item{
+  margin: 0 5px;
+}
+.copyright-list__item::before{
+  content: '';
+  height: 12px;
+  width: 1px;
+  background-color: #FFAE2B;
 }
